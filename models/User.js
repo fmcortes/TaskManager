@@ -1,8 +1,12 @@
-const mongoose = require('mongoose');
-
-// Destructuring Schema from mongoose
+const mongoose = require("mongoose");
+// Desctructuring === const Schema  = mongoose.Schema
 const { Schema } = mongoose;
-// Define user schema.
-const userSchema = new Schema();
 
-mongoose.model('users', userSchema);
+const UserSchema = new Schema({
+   name: { type: String, required: true},
+   position: { type: String}
+   //createdAt: { type: Date, default: Date.now }
+});
+
+// Exports the UserSchema for use elsewhere
+module.exports = mongoose.model("users", UserSchema);

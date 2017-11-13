@@ -4,7 +4,7 @@
   "description": "simple task manager application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --timeout 10000",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
@@ -23,7 +23,13 @@
     "express": "^4.16.2",
     "lodash": "^4.17.4",
     "mongoose": "^4.13.1",
+    "morgan": "^1.9.0",
     "nodemon": "^1.12.1",
     "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.0.1"
   }
 }

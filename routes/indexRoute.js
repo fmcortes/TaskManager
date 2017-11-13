@@ -1,8 +1,7 @@
 module.exports = app => {
 
-   app.get('/', function (req, res) {
-         res.send({hi: 'there'})
+   app.get('/', ( req, res) => {
+      res.json({ message: "Welcome to TaskManager"});
    });
-
 }
 
