@@ -1,0 +1,29 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "simple task manager application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmcortes/TaskManager.git"
+  },
+  "author": "Francisco Manuel Cortes Hernandez David Peña Aguilar Antonio Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmcortes/TaskManager/issues"
+  },
+  "homepage": "https://github.com/fmcortes/TaskManager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.1",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.0"
+  }
+}
