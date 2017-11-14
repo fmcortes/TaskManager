@@ -4,7 +4,7 @@
   "description": "simple task manager application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000",
+    "test": "mocha --timeout 10000 --recursive ./test",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
