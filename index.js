@@ -40,8 +40,8 @@ app.use(bodyParser.json({ type: 'application/json'}));
 
 // Routes of the app
 require('./routes/indexRoute')(app);
-require('./user/routes/user.route')(app);
-require('./tags/routes/tag.route')(app);
+require('./src/user/routes/user.route')(app);
+require('./src/tags/routes/tag.route')(app);
 
 console.log('Listening on port ' + PORT);
 
