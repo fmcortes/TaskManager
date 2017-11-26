@@ -3,11 +3,10 @@ if (process.env.NODE_ENV !== 'test') {
    process.env.NODE_ENV = 'test';
 }
 
-const mongoose = require('mongoose');
-const User = require('../../user/models/user.model');
+const server = require('../../index');
+const User = require('../../src/user/models/user.model');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const server = require('../../index');
 let should = chai.should();
 
 chai.use(chaiHttp);
@@ -55,7 +54,7 @@ describe('Users', () => {
             });
       });
 
-      it('should POST a us                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        er', (done) => {
+      it('should POST a user', (done) => {
          let user = {
             name: "Francisco Manuel Cortes Hernandez",
             position: "Full Stack Developer"

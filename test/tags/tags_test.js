@@ -3,13 +3,12 @@ if (process.env.NODE_ENV !== 'test') {
    process.env.NODE_ENV = 'test';
 }
 
-const mongoose = require('mongoose');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const server = require('../../index');
 
 // Models
-const Tag = require('../../tags/models/tag.model');
+const Tag = require('../../src/tags/models/tag.model');
 
 let should = chai.should();
 chai.use(chaiHttp);
