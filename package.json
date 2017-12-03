@@ -4,7 +4,7 @@
   "description": "simple task manager application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 --recursive ./test",
+    "test": "NODE_ENV=test jest --watch",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
@@ -27,11 +27,17 @@
     "mongoose": "^4.13.1",
     "morgan": "^1.9.0",
     "nodemon": "^1.12.1",
-    "passport": "^0.4.0"
+    "passport": "^0.4.0",
+    "supertest": "^3.0.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
+    "jest": "^21.2.1",
     "mocha": "^4.0.1"
+  },
+  "jest": {
+    "verbose": false,
+    "rootDir": "test"
   }
 }
